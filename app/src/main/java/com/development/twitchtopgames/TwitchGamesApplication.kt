@@ -2,6 +2,7 @@ package com.development.twitchtopgames
 
 import android.app.Application
 import com.development.twitchtopgames.di.AppComponent
+import com.development.twitchtopgames.di.DaggerAppComponent
 
 class TwitchGamesApplication : Application() {
 
