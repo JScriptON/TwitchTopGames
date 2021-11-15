@@ -1,4 +1,4 @@
-package com.development.twitchtopgames
+package com.development.twitchtopgames.ui
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.development.twitchtopgames.R
 import com.development.twitchtopgames.model.Top
 
 class GamesAdapter(games: List<Top>) : RecyclerView.Adapter<GamesAdapter.ViewHolder>() {
@@ -16,6 +17,7 @@ class GamesAdapter(games: List<Top>) : RecyclerView.Adapter<GamesAdapter.ViewHol
 
     fun setData(games: List<Top>) {
         gameList.addAll(games)
+        notifyDataSetChanged()
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -34,10 +36,10 @@ class GamesAdapter(games: List<Top>) : RecyclerView.Adapter<GamesAdapter.ViewHol
         @SuppressLint("SetTextI18n")
         fun bind(item: Top) {
             gameName?.let { it.text = item.game.name }
-            gameViewers?.let { it.text = "item.channels каналов" }
-            gameChannels?.let { it.text = "item.viewers зрителей" }
+            gameViewers?.let { it.text = "${item.channels} каналов" }
+            gameChannels?.let { it.text = "${item.viewers} зрителей" }
             Glide.with(itemView)
-                .load(item.game.logo.medium)
+                .load(item.game.box.large)
                 .into(gameLogo!!)
         }
 

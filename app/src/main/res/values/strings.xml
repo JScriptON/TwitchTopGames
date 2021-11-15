@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TwitchTopGames</string>
+    <string name="app_name">Топ игр</string>
     <string name="game_name">Название игры</string>
     <string name="game_viewers">0 зрителей</string>
     <string name="game_channels">0 каналов</string>

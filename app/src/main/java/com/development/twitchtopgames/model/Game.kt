@@ -1,8 +1,12 @@
 package com.development.twitchtopgames.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Game(
-    val id : Int,
-    val name : String,
-    val logo: Logo
+    @SerializedName("_id")
+    val id: Int,
+    @SerializedName("localized_name")
+    val name: String,
+    val box: Box
 )
 

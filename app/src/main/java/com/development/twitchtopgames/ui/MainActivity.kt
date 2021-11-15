@@ -1,7 +1,8 @@
-package com.development.twitchtopgames
+package com.development.twitchtopgames.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.development.twitchtopgames.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
