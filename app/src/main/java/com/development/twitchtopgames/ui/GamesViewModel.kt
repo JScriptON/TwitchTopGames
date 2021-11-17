@@ -12,8 +12,9 @@ import javax.inject.Inject
 
 class GamesViewModel @Inject constructor(private var gamesRepository: GamesRepository) :
     ViewModel() {
-
+    //TODO fix after onDestroy
     private val gamesLiveData = MutableLiveData<List<Top>>()
+    private val gameList: LiveData<List<Top>> = gamesLiveData
     private var offset = 0
 
     init {
@@ -29,7 +30,7 @@ class GamesViewModel @Inject constructor(private var gamesRepository: GamesRepos
     }
 
     fun getGames(): LiveData<List<Top>> {
-        return gamesLiveData
+        return gameList
     }
 
 

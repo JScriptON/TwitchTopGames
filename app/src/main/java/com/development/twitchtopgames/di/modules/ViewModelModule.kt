@@ -1,7 +1,7 @@
 package com.development.twitchtopgames.di.modules
 
 import androidx.lifecycle.ViewModel
-import com.development.twitchtopgames.ViewModelKey
+import com.development.twitchtopgames.di.ViewModelKey
 import com.development.twitchtopgames.ui.GamesViewModel
 import dagger.Binds
 import dagger.Module

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.development.twitchtopgames.R
 import com.development.twitchtopgames.model.Top
+import com.development.twitchtopgames.util.Util
 
 class GamesAdapter(games: List<Top>) : RecyclerView.Adapter<GamesAdapter.ViewHolder>() {
 
@@ -36,8 +37,8 @@ class GamesAdapter(games: List<Top>) : RecyclerView.Adapter<GamesAdapter.ViewHol
         @SuppressLint("SetTextI18n")
         fun bind(item: Top) {
             gameName?.let { it.text = item.game.name }
-            gameViewers?.let { it.text = "${item.channels} каналов" }
-            gameChannels?.let { it.text = "${item.viewers} зрителей" }
+            gameViewers?.let { it.text = Util.formatStringViewers(item.channels) }
+            gameChannels?.let { it.text = Util.formatStringChannels(item.viewers) }
             Glide.with(itemView)
                 .load(item.game.box.large)
                 .into(gameLogo!!)

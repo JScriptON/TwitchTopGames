@@ -1,4 +1,4 @@
-package com.development.twitchtopgames
+package com.development.twitchtopgames.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

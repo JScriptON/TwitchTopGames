@@ -16,7 +16,7 @@ class TwitchGamesApplication : Application() {
     }
 
     private fun createComponent() {
-        component = DaggerAppComponent.create()
+        component = DaggerAppComponent.builder().application(this).build()
     }
 }
 

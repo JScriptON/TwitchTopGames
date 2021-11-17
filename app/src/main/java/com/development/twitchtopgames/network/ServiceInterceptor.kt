@@ -1,4 +1,4 @@
-package com.development.twitchtopgames
+package com.development.twitchtopgames.network
 
 import okhttp3.Interceptor
 import okhttp3.Response

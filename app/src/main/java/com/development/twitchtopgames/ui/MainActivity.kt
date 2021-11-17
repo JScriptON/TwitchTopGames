@@ -2,6 +2,8 @@ package com.development.twitchtopgames.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import com.development.twitchtopgames.R
 
 class MainActivity : AppCompatActivity() {
@@ -14,4 +16,6 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
     }
+
+
 }

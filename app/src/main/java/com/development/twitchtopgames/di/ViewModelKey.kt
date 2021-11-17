@@ -1,4 +1,4 @@
-package com.development.twitchtopgames
+package com.development.twitchtopgames.di
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

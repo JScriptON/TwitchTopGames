@@ -1,9 +1,7 @@
 package com.development.twitchtopgames.di.modules
 
-import com.development.twitchtopgames.ApiService
-import com.development.twitchtopgames.ServiceInterceptor
-import com.development.twitchtopgames.model.repositories.GamesRepository
-import com.development.twitchtopgames.model.repositories.GamesRepositoryImpl
+import com.development.twitchtopgames.network.ApiService
+import com.development.twitchtopgames.network.ServiceInterceptor
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -18,11 +16,7 @@ class NetworkModule {
     private val BASE_URL = "https://api.twitch.tv/kraken/"
     private val CLIENT_ID = "ahuoi1tl0qmqbyi8jo8nitbmuaad7w"
 
-    @Singleton
-    @Provides
-    fun provideApiRepository(apiService: ApiService): GamesRepository {
-        return GamesRepositoryImpl(apiService)
-    }
+
 
     @Singleton
     @Provides

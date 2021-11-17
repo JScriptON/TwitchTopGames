@@ -3,4 +3,8 @@
     <string name="game_name">Название игры</string>
     <string name="game_viewers">0 зрителей</string>
     <string name="game_channels">0 каналов</string>
+    <string name="rate_app">Оценить приложение</string>
+    <string name="comm_text">Ваш комментарий/предложение</string>
+    <string name="rate_btn_text">Оценить</string>
+    <string name="rate_text">Оценка</string>
 </resources>

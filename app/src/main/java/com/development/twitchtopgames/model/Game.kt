@@ -2,6 +2,7 @@ package com.development.twitchtopgames.model
 
 import com.google.gson.annotations.SerializedName
 
+
 data class Game(
     @SerializedName("_id")
     val id: Int,
