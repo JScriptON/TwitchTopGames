@@ -11,5 +11,5 @@
 * [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) для управления фоновыми потоками.
 * [Room](https://developer.android.com/topic/libraries/architecture/room) для хранения кэшируемых данных.
 * [Dagger 2](https://developer.android.google.cn/codelabs/android-dagger) для внедрения зависимостей.
-* [Retrofit] для работы с REST запросами.
-* [Glide] отображение изображения.
+* [Retrofit](https://github.com/square/retrofit) для работы с REST запросами.
+* [Glide](https://github.com/bumptech/glide) для загрузки и отображения изображения.
