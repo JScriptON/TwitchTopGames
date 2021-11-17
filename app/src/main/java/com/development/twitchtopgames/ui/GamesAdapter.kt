@@ -37,8 +37,8 @@ class GamesAdapter(games: List<Top>) : RecyclerView.Adapter<GamesAdapter.ViewHol
         @SuppressLint("SetTextI18n")
         fun bind(item: Top) {
             gameName?.let { it.text = item.game.name }
-            gameViewers?.let { it.text = Util.formatStringViewers(item.channels) }
-            gameChannels?.let { it.text = Util.formatStringChannels(item.viewers) }
+            gameViewers?.let { it.text = Util.formatStringViewers(item.viewers) }
+            gameChannels?.let { it.text = Util.formatStringChannels(item.channels) }
             Glide.with(itemView)
                 .load(item.game.box.large)
                 .into(gameLogo!!)
